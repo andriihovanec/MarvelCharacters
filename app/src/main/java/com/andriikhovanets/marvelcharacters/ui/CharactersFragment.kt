@@ -7,12 +7,11 @@ import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.andriikhovanets.marvelcharacters.R
 import com.andriikhovanets.marvelcharacters.databinding.FragmentCharactersBinding
-import com.andriikhovanets.marvelcharacters.util.getViewModelFactory
 
 class CharactersFragment : Fragment(R.layout.fragment_characters) {
 
     private val binding: FragmentCharactersBinding by viewBinding()
-    private val charactersViewModel by viewModels<CharactersViewModel> { getViewModelFactory() }
+    private val charactersViewModel: CharactersViewModel by viewModels()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
