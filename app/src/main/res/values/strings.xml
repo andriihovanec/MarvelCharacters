@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MarvelCharacters</string>
+    <string name="cover_image">cover image</string>
+
+    <plurals name="number_of_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
 </resources>
